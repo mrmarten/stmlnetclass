@@ -1,25 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Source\\MLtraining\\stmlnetclass\\Day2\\SpamClassifier\\SpamClassifier\\SpamClassifier.csproj": {}
+    "C:\\dev\\stmlnetclass\\Day2\\SpamClassifier\\SpamClassifier\\SpamClassifier.csproj": {}
   },
   "projects": {
-    "D:\\Source\\MLtraining\\stmlnetclass\\Day2\\SpamClassifier\\SpamClassifier\\SpamClassifier.csproj": {
+    "C:\\dev\\stmlnetclass\\Day2\\SpamClassifier\\SpamClassifier\\SpamClassifier.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Source\\MLtraining\\stmlnetclass\\Day2\\SpamClassifier\\SpamClassifier\\SpamClassifier.csproj",
+        "projectUniqueName": "C:\\dev\\stmlnetclass\\Day2\\SpamClassifier\\SpamClassifier\\SpamClassifier.csproj",
         "projectName": "SpamClassifier",
-        "projectPath": "D:\\Source\\MLtraining\\stmlnetclass\\Day2\\SpamClassifier\\SpamClassifier\\SpamClassifier.csproj",
-        "packagesPath": "C:\\Users\\erihag\\.nuget\\packages\\",
-        "outputPath": "D:\\Source\\MLtraining\\stmlnetclass\\Day2\\SpamClassifier\\SpamClassifier\\obj\\",
+        "projectPath": "C:\\dev\\stmlnetclass\\Day2\\SpamClassifier\\SpamClassifier\\SpamClassifier.csproj",
+        "packagesPath": "C:\\Users\\MARSJO03\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\stmlnetclass\\Day2\\SpamClassifier\\SpamClassifier\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
-        ],
         "configFilePaths": [
-          "C:\\Users\\erihag\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\MARSJO03\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.0"
