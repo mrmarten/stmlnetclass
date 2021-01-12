@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "clustering": {
+      "commandName": "Project",
+      "commandLineArgs": "train ..\\..\\..\\Data\\sampledata.csv ..\\..\\..\\Data\\testdata.csv"
+    }
+  }
+}

@@ -12,12 +12,10 @@ namespace SimpleRegression
         static void Main(string[] args)
         {
             // Vi skapar en MLContext
-            // TODO: skapa ett nytt MLContext och som du döper till context och sätt seed värdet till 0
-
+            var context = new MLContext(seed: 0);
 
             // Vi laddar in CSV filen och spearerar på komma tecknet
-            // TODO: skapa en variabel som heter data och ladda in från contextet, från CSV filen du använder metoden LoadFromTextFile för att ladda in texten sen separera med komma tecken. 
-
+            var data = context.Data.LoadFromTextFile<Input>(_path, hasHeader: true, separatorChar: ',');
 
             // Vi skapar pipelinen och berättar för modellen att vi vill klassificera värdet "PovertyRate"
             var pipeline = context.Transforms.NormalizeMinMax("PovertyRate")
@@ -25,7 +23,6 @@ namespace SimpleRegression
                 .Append(context.Regression.Trainers.Ols());
 
             //Med Fit funktionen startar vi själva träningen!
-            //TODO: Starta träna modellen genom att skapa en variabel som heter model sen anropa Fit metoden från pipelinen och passa in data variabeln.
             var model = pipeline.Fit(data);
 
             // Vi använder modellen för att göra predektion
@@ -34,7 +31,7 @@ namespace SimpleRegression
             var prediction = predictor.Predict(input);
 
             // Vi printar ut vad vår estimerade birth rate är samt visar vilken birth rate som faktist stämmer från "facit"
-            //TODO: Skapa en till WriteLine output där du tar ut värdet BirthRate från prediction variabeln.
+            Console.WriteLine($"Predicted birth rate: {prediction.BirthRate:0.##}");
             Console.WriteLine($"Actual birth rate: 58.10");
             Console.WriteLine();
         }
