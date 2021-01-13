@@ -96,6 +96,11 @@ namespace recommendation.ML
 
             var modelMetrics = MlContext.Recommendation().Evaluate(testSetTransform);
 
+            /*
+            Mean Squared Error vill försöka uppnå ett sånt långt värde som möjligt.
+            Root Mean Squared Errror vill vi ha ett värde under 180 för att det ska räknas som en effektiv modell.
+            */
+
             Console.WriteLine($"Matrix Factorization Evaluation:{Environment.NewLine}{Environment.NewLine}" +
                               $"Loss Function: {modelMetrics.LossFunction:F3}{Environment.NewLine}" +
                               $"Mean Absolute Error: {modelMetrics.MeanAbsoluteError:F3}{Environment.NewLine}" +

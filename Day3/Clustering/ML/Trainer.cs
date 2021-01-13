@@ -75,7 +75,9 @@ namespace clustering.ML
                 featureColumnName: FEATURES);
 
             Console.WriteLine($"Average Distance: {modelMetrics.AverageDistance}");
+            // Davies Bould Index vill vi ha så nära väret 0 som möjligt.
             Console.WriteLine($"Davies Bould Index: {modelMetrics.DaviesBouldinIndex}");
+            // Normalized Mutual Information vill vi ha så nära värdet 1 som möjligt.
             Console.WriteLine($"Normalized Mutual Information: {modelMetrics.NormalizedMutualInformation}");
         }
     }
