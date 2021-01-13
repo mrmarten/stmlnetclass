@@ -8,6 +8,9 @@ namespace recommendation
     {
         static void Main(string[] args)
         {
+            // Efter du har kompilerat denna solution kan du testa exempel genom att exekvera exe filen i bin katalog och använda input.json filen som parameter för texta ett exempel.
+            // C:\dev\stmlnetclass\Day3\Recommendation\bin\Debug\netcoreapp3.0>recommendation.exe predict input.json
+
             if (args.Length < 2)
             {
                 Console.WriteLine($"Invalid arguments passed in, exiting.{Environment.NewLine}{Environment.NewLine}Usage:{Environment.NewLine}" +
